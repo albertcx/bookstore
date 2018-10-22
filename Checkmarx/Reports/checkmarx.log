@@ -1,0 +1,58 @@
+com.checkmarx.jenkins.CxScanBuilder: [2017-01-10 14:20:03,217] INFO : Checkmarx Jenkins plugin version: 8.41.0
+com.checkmarx.jenkins.CxScanBuilder: [2017-01-10 14:20:03,217] INFO : ----------------------------Configurations:-----------------------------
+username: admin@cx
+url: http://10.31.1.43
+projectName: jenkins
+isIncrementalScan: false
+folderExclusions: 
+isSynchronous: true
+generatePDFReport: false
+osaEnabled: false
+ ------------------------------------------------------------------------
+
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:03,217] INFO : SSL/TLS Certificate Validation Disabled
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:03,217] INFO : Establishing connection with Checkmarx server at: http://10.31.1.162
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:03,235] DEBUG: Resolver url: http://10.31.1.162/cxwebinterface/cxwsresolver.asmx
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:03,282] DEBUG: Setting connection timeout to 60 seconds
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:03,306] DEBUG: Webservice url: http://10.31.1.162/cxwebinterface/Jenkins/CxJenkinsWebService.asmx
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:03,484] DEBUG: Setting connection timeout to 60 seconds
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:03,563] DEBUG: Login successful, sessionId: 99636196451081310217d1b2985b-90ce-4e6a-8ae1-d40a0fbfaa97xnKpxXJdmSkP-W9TF2znqUid0qKyQv0y6nif
+com.checkmarx.jenkins.CxScanBuilder: [2017-01-10 14:20:03,563] INFO : Checkmarx server login successful
+com.checkmarx.jenkins.CxScanBuilder: [2017-01-10 14:20:04,572] INFO : 
+Scan job started in full scan mode
+
+com.checkmarx.jenkins.filesystem.zip.CxZip: [2017-01-10 14:20:04,572] INFO : Started zipping the workspace
+com.checkmarx.jenkins.filesystem.zip.CxZip: [2017-01-10 14:20:04,599] INFO : Zipping (0 bytes): .project
+Zipping (292 bytes): AdminMenu_jsp.java
+Zipping (4 KB): adminbooks_jsp.java
+Zipping (10 KB): tal\ShoppingCart_jsp.java
+
+com.checkmarx.jenkins.filesystem.zip.CxZip: [2017-01-10 14:20:04,599] INFO : Zipping complete with 4 files, total compressed size: 17 KB
+com.checkmarx.jenkins.filesystem.zip.CxZip: [2017-01-10 14:20:04,600] INFO : Temporary file with zipped and base64 encoded sources was created at: C:\Windows\TEMP\base64ZippedSource2688418817061531380.bin
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:04,636] INFO : Uploading sources to Checkmarx server
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:04,638] INFO : Finished uploading sources to Checkmarx server
+com.checkmarx.jenkins.CxScanBuilder: [2017-01-10 14:20:05,077] INFO : Temporary file deleted
+com.checkmarx.jenkins.CxScanBuilder: [2017-01-10 14:20:05,077] INFO : 
+Scan job submitted successfully
+
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:15,196] INFO : Source contains: 2260 lines of code.
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:15,197] INFO : Scan job queued at position: 1
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:20:35,350] INFO : Scanning: Engine starts scan  (Current stage progress: 0%, Total progress: 0%)
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:21:05,517] INFO : Scanning: Stage # 2 of 33  (Current stage progress: 0%, Total progress: 1%)
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:21:35,647] INFO : Scanning: Stage # 13 of 33 com.opensymphony.xwork2.ActionSupport.validate (Current stage progress: 75%, Total progress: 18%)
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:22:05,870] INFO : Scanning: Stage # 32 of 33 Running query: Set_Session_Attribute (Current stage progress: 3%, Total progress: 51%)
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:22:35,990] INFO : Scan Finished Successfully -  RunID: 70 ScanID:1000039
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:22:35,991] INFO : Requesting XML Scan Report Generation
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:22:36,035] INFO : XML Report generation in progress
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:22:41,084] INFO : Scan report generated on Checkmarx server
+com.checkmarx.jenkins.CxWebService: [2017-01-10 14:22:41,229] INFO : Scan report written to: C:\Program Files (x86)\Jenkins\jobs\xas\builds\7\checkmarx\ScanReport.xml
+com.checkmarx.jenkins.CxScanBuilder: [2017-01-10 14:22:41,276] INFO : 
+---------------------Checkmarx Scan Results(CxSAST)-------------------------
+High Severity Results: 0
+Medium Severity Results: 15
+Low Severity Results: 53
+Info Severity Results: 0
+----------------------------------------------------------------------------
+
+com.checkmarx.jenkins.CxScanBuilder: [2017-01-10 14:22:41,299] INFO : Copying reports to workspace
+com.checkmarx.jenkins.CxScanBuilder: [2017-01-10 14:22:41,325] INFO : Copying file [checkmarx.log] to workspace [C:\Users\tald\Desktop\projects\BookStore_Small_CLI\Checkmarx\Reports\checkmarx.log]
