@@ -56,7 +56,7 @@ public class ShoppingCart_jsp extends HttpJspBase {
     try {
       conn1 = cn();
       stat1 = conn1.createStatement();
-      java.sql.ResultSet rsLookUp = openrs( stat1, "SELECT " + fName + " FROM " + table + " WHERE " + where);
+      java.sql.ResultSet rsLookUp = openrs(stat1, "SELECT " + fName + " FROM " + table + " WHERE " + where);
       if (! rsLookUp.next()) {
         rsLookUp.close();
         stat1.close();
