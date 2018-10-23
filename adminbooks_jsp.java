@@ -53,7 +53,7 @@ public class AdminBooks_jsp extends HttpJspBase {
     try {
       conn1 = cn();
       stat1 = conn1.createStatement();
-      java.sql.ResultSet rsLookUp = openrs( stat1, "SELECT " + fName + " FROM " + table + " WHERE " + where);
+      java.sql.ResultSet rsLookUp =  openrs( stat1, "SELECT " + fName + " FROM " + table + " WHERE " + where);
       if (! rsLookUp.next()) {
         rsLookUp.close();
         stat1.close();
@@ -74,7 +74,7 @@ public class AdminBooks_jsp extends HttpJspBase {
   long dCountRec(java.sql.Statement stat, String table, String sWhere) {
     long lNumRecs = 0;
     try {
-      java.sql.ResultSet rs = stat.executeQuery("select count(*) from " + table + " where " + sWhere);
+      java.sql.ResultSet rs =  stat.executeQuery("select count(*) from " + table + " where " + sWhere);
       if ( rs != null && rs.next() ) {
         lNumRecs = rs.getLong(1);
       }
